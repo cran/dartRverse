@@ -1,8 +1,8 @@
 Package: dartRverse
 Title: Install and Load the 'dartRverse' Suits of Packages
-Version: 0.49
-Date: 2023-08-22
-Revision: Balanced Buzzard
+Version: 0.51
+Date: 2023-12-01
+Revision: Crazy Chameleon
 Authors@R: c(
             person("Bernd", "Gruber", email="bernd.gruber@canberra.edu.au", role=c("aut","cre")), 
             person("Arthur", "Georges", email="georges@aerg.edu.au", role="aut"),
@@ -21,11 +21,12 @@ URL: https://github.com/green-striped-gecko/dartRverse
 License: GPL (>= 3)
 Depends: R (>= 3.5), dartR.base, dartR.data
 Imports: cli, rlang
-Suggests: devtools
+Suggests: devtools, dartR.sim, dartR.captive, dartR.popgen,
+        dartR.spatial
 Encoding: UTF-8
 RoxygenNote: 7.2.3
 NeedsCompilation: no
-Packaged: 2023-08-22 03:33:37 UTC; s425824
+Packaged: 2023-12-01 02:39:04 UTC; s425824
 Maintainer: Bernd Gruber <bernd.gruber@canberra.edu.au>
 Repository: CRAN
 Author: Bernd Gruber [aut, cre],
@@ -34,4 +35,4 @@ Author: Bernd Gruber [aut, cre],
   Carlo Pacioni [aut],
   Peter J. Unmack [aut],
   Oliver Berry [aut]
-Date/Publication: 2023-08-22 16:50:07 UTC
+Date/Publication: 2023-12-01 10:50:02 UTC
