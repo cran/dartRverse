@@ -1,6 +1,5 @@
 #' @import cli
-#' @import dartR.base
-#' @import dartR.data
+#' @import devtools
 #' @importFrom rlang is_installed inform
 #' @importFrom utils packageVersion
 
@@ -28,9 +27,11 @@ dartR_check <- function()
   }))
   
   core <- core[bc]
+  
   installedaddons <- addons[ba]
   if (is.null(ba)) notinstalledaddons <- addons else 
     notinstalledaddons <- addons[!ba]  
+  if (length(core) == 0) notinstalledaddons <- c("dartR.base","dartR.data", notinstalledaddons)
   
   return(pack<- list(core=core, ip=installedaddons, nip = notinstalledaddons))
   
@@ -53,6 +54,11 @@ dartR_check <- function()
   inform_startup(dartRverse_attach_message(dc$core,"core")) 
   inform_startup(dartRverse_attach_message(dc$ip,"addon"))
   inform_startup(dartRverse_attach_message(dc$nip,"notaddon"))
+  
+  if (length(dc$core)<2) {
+    inform_startup(paste0("\nPlease note: The core dartRverse packages are not installed yet. \nYou can install the missing core packages using: \n",cli::style_bold(cli::col_blue("install.packages('BiocManager')\nBiocManager::install('SNPRelate')\ndartRverse_install('dartR.base',rep='CRAN')\n")),"To install all packages of the dartRverse, use:\n",cli::style_bold(cli::col_blue("dartRverse_install('all')"))))
+  }
+  
 }
 
 is_attached <- function(x) {
