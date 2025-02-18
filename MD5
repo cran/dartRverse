@@ -1,12 +1,14 @@
-c9c2bcb55b79cc72d2fb70494e20af34 *DESCRIPTION
-42df239700177baa02423353a73707d2 *NAMESPACE
+0e1339dcbf4815c73ee12e38563918a6 *DESCRIPTION
+75e0d4b97b0692de8dba213de9194802 *NAMESPACE
 f6f3ecc438e8fd6c00c9a47ff6ed0aa7 *R/attach.R
 38790ade1acc679da52e93a94329b73d *R/dartRverse.R
 209f724750e84b6629868888d3a8bedc *R/dartRverse_install.r
+637acc660c38c997312c9e715d90c780 *R/gl.download.binary.r
 b0d063761bef4bd0678362dd01661974 *R/zzz.R
 2e2b20d3803528918850057684367b96 *inst/CITATION
 41c85f555a262141dd8f3567af1cf9de *man/dartRverse-package.Rd
-7c9aec38b74f9291dc3e4d0d38800c31 *man/dartRverse_install.Rd
+7ff25bc5d0cb967b15f23e8827ec47f3 *man/dartRverse_install.Rd
 2325d2dd2ce9aec3606db9455e05234a *man/figures/Figure_1.png
 45a86776409feffcbee784a76b846846 *man/figures/dartR_logo.png
 de4a151d4543272932941f3b5e8d6e32 *man/figures/institutions.png
+7d26ee28aa00d9ec72c1b3df192862c7 *man/gl.download.binary.Rd
